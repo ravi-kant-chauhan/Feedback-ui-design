@@ -36,3 +36,7 @@ body {
   display: flex;
   margin: 20px 0;
 }
+
+.rating img {
+  width: 40px;
+}
