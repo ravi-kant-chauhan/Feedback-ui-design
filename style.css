@@ -51,3 +51,7 @@ body {
 .rating.active small {
   color: #111;
 }
+
+.rating img {
+  width: 40px;
+}
