@@ -61,3 +61,8 @@ body {
   display: inline-block;
   margin: 10px 0 0;
 }
+
+.rating:hover small,
+.rating.active small {
+  color: #111;
+}
