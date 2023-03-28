@@ -4,6 +4,13 @@ const sendBtn = document.querySelector('#send')
 const panel = document.querySelector('#panel')
 let selectedRating = 'Satisfied'
 
+ratingsContainer.addEventListener('click', (e) => {
+    if(e.target.parentNode.classList.contains('rating') && e.target.nextElementSibling) {
+        removeActive()
+    } 
+
+})
+
 sendBtn.addEventListener('click', (e) => {
     panel.innerHTML = `
         <i class="fas fa-heart"></i>
