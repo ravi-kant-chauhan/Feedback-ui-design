@@ -13,8 +13,11 @@ ratingsContainer.addEventListener('click', (e) => {
         e.target.parentNode.classList.contains('rating') &&
         e.target.previousSibling &&
         e.target.previousElementSibling.nodeName === 'IMG'
-    ) 
-
+    ) {
+        removeActive()
+        e.target.parentNode.classList.add('active')
+        selectedRating = e.target.innerHTML
+    }
 })
 
 sendBtn.addEventListener('click', (e) => {
