@@ -29,3 +29,9 @@ sendBtn.addEventListener('click', (e) => {
         <p>We'll use your feedback to improve our customer support</p>
     `
 })
+
+function removeActive() {
+    for(let i = 0; i < ratings.length; i++) {
+        ratings[i].classList.remove('active')
+    }
+}
